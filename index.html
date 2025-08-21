@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
@@ -6,15 +7,15 @@
         <div id="container">
             <div id="top-container">
                 <form id="color-form" action="">
-                    <input class="color-picker" type="color">
-                    <select class="dropdown" name="" id="">
-                        <option value="">Monochrome</option>
-                        <option value="">Monochrome-dark</option>
-                        <option value="">Monochrome-light</option>
-                        <option value="">Analogic</option>
-                        <option value="">Complement</option>
-                        <option value="">Analogic-complement</option>
-                        <option value="">Triad</option>
+                    <input class="color-picker" id="seed-color" name="seed-color" aria-label="pick a seed color" type="color">
+                    <select class="dropdown" name="color-mode" id="color-mode">
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome-dark</option>
+                        <option value="monochrome-light">Monochrome-light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic-complement</option>
+                        <option value="triad">Triad</option>
                     </select>
                     <button class="btn">Get color scheme</button>
                 </form>
@@ -26,7 +27,7 @@
                 </div>
                 <div>
                     <div class="color-box box2"></div>
-                    <p class="color-hex hex1">#2B283A</p>
+                    <p class="color-hex hex2">#2B283A</p>
                 </div>
                 <div>
                     <div class="color-box box3"></div>
